@@ -1,0 +1,24 @@
+{
+    "entrypoints": [
+        {
+            "name": "http",
+            "address": ":8080"
+        },
+        {
+            "name": "https",
+            "address": ":4433",
+            "protocol": "https",
+            "tls": {
+                "certFile": "example/test.crt",
+                "keyFile": "example/test.key"
+            }
+        }
+    ],
+    "applications": [
+        {
+            "port": 9000,
+            "protocol": "http"
+        }
+    ],
+    "log_path": "example/test.log"
+}
